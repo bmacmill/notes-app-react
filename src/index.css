@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+  min-height: 100vh;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DarkMode{
+  background-color: #646E78;
+}
+
+.DarkMode h1 {
+  color: #FFFFFF;
+}
+
+.DarkMode > div > div > button {
+  color: #36454F;
+}
+.DarkMode > .Container > .NotesList > .Note {
+  background-color: #8D98A7;
+}
+
+.DarkMode > .Container > .NotesList > .New, 
+.DarkMode > .Container > .NotesList > .New > textarea {
+  background-color: #8DA7BE;
+}
+
+.Note {
+  background-color: #fef68a;
+  margin-bottom: .5em;
+  border-radius: 10px;
+  padding: 1em;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* keeping the spacing intact */
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.Note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NotesList{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.Note.New {
+  background-color: #67d7cc;
+}
+
+textarea{
+  background-color: #67d7cc;
+  border: none;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+textarea::placeholder{
+  color: gray;
+}
+
+.SaveNote, .Toggle{
+  border-radius: 1em;
+  background-color: #e1e1e1;
+  border: none;
+  padding: 5px 10px;
+}
+
+.SaveNote:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.Delete-icon:hover{
+  color: #ff0f0f;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.Search {
+  display: flex;
+  align-items: center;
+  background-color:#d3d3d3;
+  border-radius: 0.625em;
+  padding: 0.3125em;
+  margin: 1.5em 0;
+}
+
+.Search input{
+  background-color: #d3d3d3;
+  border: none;
+}
+
+.Search input:focus{
+  outline: none;
+}
+
