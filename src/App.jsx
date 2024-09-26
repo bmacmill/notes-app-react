@@ -48,9 +48,9 @@ const App = () => {
   return (
     <div className={`${darkMode && "DarkMode"}`}>
       <div className="Container">
-        <Header 
+        <Header
           handleDarkMode={setDarkMode} />
-        <Search 
+        <Search
           handleSearchNote={setSearchText} />
         <NotesList
           notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))}
@@ -66,14 +66,3 @@ const App = () => {
 
 
 export default App;
-
-
-//~42.. great description of prop drilling...
-// https://www.youtube.com/watch?v=8KB3DHI-QbM&t=1118s
-///-------contunure from about a hour in.....
-
-//4 projects - start with todo
-//https://www.youtube.com/watch?v=82PXenL4MGg
-
-//15 min in... slooooo
-//https://www.youtube.com/watch?v=_3ooazcK4TI
